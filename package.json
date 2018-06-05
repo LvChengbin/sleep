@@ -1,0 +1,50 @@
+{
+    "name": "@lvchengbin/sleep",
+    "version": "0.0.1",
+    "description": "Sleep function for javascript.",
+    "keywords": [
+        "sleep",
+        "asleep",
+        "stop",
+        "promise",
+        "async"
+    ],
+    "main": "dist/sleep.cjs.js",
+    "jsnext:main": "src/sleep.js",
+    "scripts": {
+        "build": "rollup -c",
+        "prepublish": "npm run build",
+        "test": "karma start",
+        "lint": "eslint ./ --cache --ignore-path .eslintignore",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    },
+    "pre-commit": [
+        "precommit-msg",
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:LvChengbin/sleep.git"
+    },
+    "author": "LvChengbin",
+    "license": "MIT",
+    "devDependencies": {
+        "buble": "^0.19.3",
+        "eslint": "^4.19.1",
+        "jasmine-core": "^2.99.1",
+        "karma": "^2.0.2",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "^1.1.2",
+        "karma-rollup-preprocessor": "^5.1.1",
+        "optimist": "^0.6.1",
+        "pre-commit": "^1.2.2",
+        "puppeteer": "^1.4.0",
+        "rollup": "^0.54.0",
+        "rollup-plugin-babel": "^4.0.0-beta.4",
+        "rollup-plugin-buble": "^0.19.2",
+        "rollup-plugin-node-resolve": "^3.3.0"
+    },
+    "dependencies": {
+        "@lvchengbin/promise": "^1.1.4"
+    }
+}
