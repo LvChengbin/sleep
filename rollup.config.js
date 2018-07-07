@@ -17,6 +17,7 @@ export default [ {
     input : 'src/sleep.js',
     plugins : [
         resolve( {
+            module : true,
             jsnext : true
         } ),
         buble( {
