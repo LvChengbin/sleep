@@ -1,5 +1,7 @@
 # Sleep
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LvChengbin/sleep.svg)](https://greenkeeper.io/)
+
 A sleep function for javascript.
 
 ## Start
